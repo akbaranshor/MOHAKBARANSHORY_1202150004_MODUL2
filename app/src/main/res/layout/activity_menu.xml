@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.mohakbaranshory_1202150004_modul2.MenuActivity">
+
+    <!-- Menaruh elemen textview ke tengah -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Pilih Menu :"
+        android:textSize="24sp" />
+    <!-- Menyisipkan Radiobutton ke dalam RadioGroup agar bisa memilih salah satu radio button -->
+    <RadioGroup
+        android:id="@+id/tes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/dineInRad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dine In" />
+
+        <RadioButton
+            android:id="@+id/takeAwayRad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Away" />
+
+    </RadioGroup>
+
+    <!-- Menambahkan atribut onClick, yang mana akan mengarah ke method pesan -->
+    <Button
+        android:id="@+id/pesanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Sekarang"
+        android:layout_gravity="center"
+        android:onClick="pesan"/>
+</LinearLayout>
